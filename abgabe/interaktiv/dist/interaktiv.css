@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+body {
+  font-family: "Montserrat";
+  color: rgba(255, 255, 255, 0.6);
+  background: #000000; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    #000000,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("blurry-bg-lila.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000;
+}
+
+#zurueck {
+  margin: 50px;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #bebebe;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#main {
+  margin-top: 20px;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#text {
+}
+
+#nummer {
+}
+
+#button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70px;
+  padding: 0px 50px 0px 50px;
+  max-width: 200px;
+  font-size: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin: auto;
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4)
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#seelsorge {
+  display: flex;
+  flex-direction: row;
+}
+.typewriter {
+  font-size: 5.5rem;
+  text-align: center;
+  border-right: solid 2px rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 11ch;
+  animation: typewriter 3s steps(11) 1s, cursor 500ms steps(11) infinite;
+}
+/* typewriter animation */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 11ch;
+  }
+}
+/* cursor animation */
+@keyframes cursor {
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}

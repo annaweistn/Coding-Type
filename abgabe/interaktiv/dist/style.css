@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("blurry-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+
+#container {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  /* text-align: center; */
+  display: flex;
+}
+
+
+
+
+a {
+  display: inline-block;
+  position: relative;
+}
+
+a:link { color: #717bff; text-decoration: none; font-weight: bold }
+a:active { color: #717bff; text-decoration: none; font-weight: bold }
+a:visited { color: #717bff; text-decoration: none; font-weight: bold }
+a:hover { color: #717bff; text-decoration: none; font-weight: bold }
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  background: #717bff;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+#h2 {
+  font-family: "Forum", cursive;
+  font-size: 108px; /* ursprünglich 146 */
+  /* Wenn text text zentriert werden soll:
+   text-align: center; */
+  color: #b7b9c2;
+  letter-spacing: 2px;
+  /* text-align: left; */
+  -webkit-font-smoothing: antialiased;
+  align-items: flex-end;
+}
+#header {
+  display: flex;
+  /* Abstand zwischen Text und Außen */
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#flex-row {
+  display: flex;
+  width: 100%; /* links rechts margin */
+  /* height: 50%; */
+  justify-content: space-between;
+}
+#h3 {
+  font-family: "Forum", cursive;
+  font-size: 32px;
+  color: #b7b9c2;
+  letter-spacing: 4px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#h4 {
+  font-family: "Forum", cursive;
+  font-size: 32px;
+  color: #b7b9c2;
+  letter-spacing: 4px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+#h5 {
+  font-family: "Forum", cursive;
+  font-size: 32px;
+  color: #b7b9c2;
+  letter-spacing: 4px;
+  text-align: right;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Blur effect for webkit browsers */
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(20px);
+  }
+
+  70% {
+    -webkit-filter: blur(0px);
+  }
+
+  75% {
+    -webkit-filter: blur(0px);
+  }
+
+  100% {
+    -webkit-filter: blur(3px);
+  }
+}
